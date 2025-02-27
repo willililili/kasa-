@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 30px;
+}
+
+   // Media query pour les appareils mobiles
+ @media (max-width: 380px) { 
+  .home {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}

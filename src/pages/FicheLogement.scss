@@ -1,0 +1,92 @@
+.logement-informations {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+    .details-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .details-on-location {
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 36px;
+                color: #ff6161;
+                font-weight: 500;
+                text-align: left;
+                margin: 0px;
+            }
+
+            p{
+                font-size: 18px ;
+                margin-top: 5px; 
+                margin-bottom: 30px;
+            }
+        }
+    } 
+    
+    .details-on-host {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .description-equipements-logement-details {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        margin-bottom: 10px;
+
+        
+        .collapse-title h2 {
+            font-size:18px;
+        }
+        .collapse-content ul {
+            margin: 0px 5px;
+            list-style-type: none;
+            padding: 0px;
+        } 
+
+    }
+}
+
+ // Media query pour les appareils mobiles
+ @media (max-width: 380px) { 
+    .logement-informations {
+        .details-container {
+            flex-direction: column;
+            margin: 0px 20px;
+            .details-on-location {
+                margin-bottom: 0px;
+                h1 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px ;
+                    margin-bottom: 15px;
+                }
+            }
+        } 
+        .details-on-host {
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .description-equipements-logement-details {
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+            .collapse-title h2 {
+                font-size:13px;
+            }
+        }
+    }
+}
+            

@@ -1,0 +1,31 @@
+.host-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    img {
+        width: 70px;
+        border-radius: 50%;
+    }
+    
+    p {
+        max-width: 150px;
+        color: #ff6161;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
+
+// Media query pour les appareils mobiles
+@media (max-width: 380px) { 
+    .host-info { 
+        img {
+            width: 40px;
+        }
+        p {
+            max-width: 70px;
+            font-size: 12px;
+            text-align: right;
+        }
+    }
+}
