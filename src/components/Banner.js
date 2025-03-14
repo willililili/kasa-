@@ -4,7 +4,7 @@ import "./Banner.scss";
 const Banner = ({ page, text }) => {
   return (
       <div className={`banner ${page}`}>
-          <h1>{text}</h1>
+          <h1 className="banner-h1">{text}</h1>
       </div>
   );
 };
